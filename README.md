@@ -1,0 +1,1 @@
+These are my solutions to the algorithm challenges on [FreeCodeCamp.com] (http://freecodecamp.com).
