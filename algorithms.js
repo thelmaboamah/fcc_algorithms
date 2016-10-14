@@ -4,6 +4,8 @@ function reverseString(str) {
   return str.split("").reverse().join("");
 }
 
+reverseString("hello");
+
 /* Return the factorial of the provided integer.
 If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n.
 Factorials are often represented with the shorthand notation n!
@@ -18,6 +20,8 @@ function factorialize(num) {
   
 }
 
+factorialize(5);
+
 //Return true if the given string is a palindrome. Otherwise, return false.
 function palindrome(str) {
   // Good luck!
@@ -31,6 +35,8 @@ function palindrome(str) {
   }
   
 }
+
+palindrome("eye");
 
 //Return the length of the longest word in the provided sentence.
 function findLongestWord(str) {
@@ -48,6 +54,8 @@ function findLongestWord(str) {
   return strLengthArray[0]; 
 }
 
+findLongestWord("The quick brown fox jumped over the lazy dog")
+
 //Return the provided string with the first letter of each word capitalized.
 
 function titleCase(str) {
@@ -60,3 +68,20 @@ function titleCase(str) {
 }
 
 titleCase("I'm a little tea pot");
+
+//Return and array consisting of the largest numbers from each sub-array.
+function largestOfFour(arr) {
+  var sortedArr = [];
+  var largestNum = [];
+  
+  for(var i = 0; i < arr.length; i++) {
+      sortedArr.push(arr[i].sort(function(a,b) {
+      return b - a;
+    }));
+    largestNum.push(sortedArr[i][0]);
+  }
+
+  return largestNum;
+}
+
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
