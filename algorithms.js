@@ -85,3 +85,49 @@ function largestOfFour(arr) {
 }
 
 largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+
+//Check if a string ends with another string
+function confirmEnding(str, target) {
+    targetLen = target.length;
+  subString =  str.substr(-(targetLen));
+  
+  if (subString === target) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+confirmEnding("Bastian", "n");
+
+
+//Repeat a given string num times. Return an empty string if num is not a positive number.
+function repeatStringNumTimes(str, num) {
+  if (num > 0) {
+    return str.repeat(num);
+  }  else {
+    return "";
+  }
+
+}
+
+//Truncate a string (first argument) if it is longer than the given maximum string length (second argument). Return the truncated string with a ... ending.
+
+//Note that inserting the three dots to the end will add to the string length.
+
+//However, if the given maximum string length num is less than or equal to 3, then the addition of the three dots does not add to the string length in determining the truncated string.
+//repeatStringNumTimes("abc", 3);
+
+function truncateString(str, num) {
+    
+  if (str. length <= num) {
+    return str;
+  } else if (num > 3) {
+    return str.slice(0, num-3) + "...";
+  } else {
+    return str.slice(0, num) + "...";
+  }
+}
+
+truncateString("A-tisket a-tasket A green and yellow basket", 11);
+
