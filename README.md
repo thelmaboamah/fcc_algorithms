@@ -1,1 +1,1 @@
-These are my solutions to the algorithm challenges on [FreeCodeCamp.com] (http://freecodecamp.com).
+These are my solutions algorithm challenges, mostly from [FreeCodeCamp.com] (http://freecodecamp.com).
